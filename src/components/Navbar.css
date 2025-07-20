@@ -1,0 +1,152 @@
+.navbar {
+  background-color: #003366;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 1;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+
+.brand-text {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.65rem;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links li a,
+.dropdown-toggle {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav-links li a:hover,
+.dropdown-toggle:hover {
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  color: #003366;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: #003366;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* ✅ Mobile view */
+@media (max-width: 900px) {
+  .navbar-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-text-wrap {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #003366;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: #002244;
+    border-radius: 4px;
+  }
+
+  .dropdown-menu li a {
+    color: white;
+  }
+}

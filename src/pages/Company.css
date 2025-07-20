@@ -1,0 +1,153 @@
+.about-page {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #f8fbff;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Logo at top */
+.about-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-logo img {
+  max-height: 80px;
+  width: auto;
+}
+
+/* Typography */
+.about-page h1 {
+  font-size: 2.2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.about-page h2 {
+  font-size: 1.6rem;
+  color: #003366;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-page p,
+.about-page li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-page ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+/* Founder Section */
+.about-founder {
+  margin-top: 3rem;
+}
+
+.founder-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.founder-wrapper {
+  overflow: hidden; /* helps contain the float */
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.founder-photo-wrap {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin: 0 1.5rem 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.founder-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.founder-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Section spacing */
+.about-projects,
+.about-closing {
+  margin-top: 2rem;
+}
+
+
+.projects-section {
+  padding: 40px 20px;
+  background: #f9fafc;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.projects-section h2 {
+  text-align: center;
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects-intro {
+  max-width: 800px;
+  margin: 0 auto 25px auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.projects-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.projects-list li {
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 12px 15px;
+  border-left: 4px solid #0055a5;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.projects-list li strong {
+  color: #003366;
+}
+
+.projects-list li em {
+  color: #555;
+  font-style: italic;
+}
+
+.projects-conclusion {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #003366;
+}
+
+img.centered-image {
+  display: block;      /* Makes margin auto work */
+  margin: 40px auto;   /* Centers horizontally + adds spacing */
+  max-width: 80%;      /* Prevents overflow on small screens */
+  height: auto;        /* Keeps aspect ratio */
+  border-radius: 8px;  /* Optional: slight rounding */
+}

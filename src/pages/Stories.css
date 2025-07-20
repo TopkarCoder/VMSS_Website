@@ -1,0 +1,99 @@
+/* Outer container */
+.stories-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.stories-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  font-size: larger;
+  padding: 8px 14px;
+  border: none;
+  background: #eee;
+  color: #333;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+  background: #0055a5;
+  color: #fff;
+}
+
+/* Grid for cards */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card layout */
+.story-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 230px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Header (title + category) */
+.story-header h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+  color: #003366;
+}
+
+.story-category {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Story content */
+.story-content {
+  flex-grow: 1; /* pushes toggle button to bottom */
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Read More / Show Less button */
+.story-toggle {
+  margin-top: 10px;
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #0055a5;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.story-toggle:hover {
+  color: #003366;
+}

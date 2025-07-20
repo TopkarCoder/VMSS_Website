@@ -1,0 +1,43 @@
+:root {
+  --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-color: #222;
+  --font-size-base: 16px;
+  --font-size-h1: 3.2rem;
+  --font-size-h2: 2rem;
+  --bg-color: #f4f7fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: black;
+  }
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--font-color);
+  background: var(--bg-color);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  font-size: var(--font-size-h1);
+  color: #003366;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  color: #003366;
+}
+
+.page {
+  padding: 2rem;
+}

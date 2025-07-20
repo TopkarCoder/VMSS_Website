@@ -1,0 +1,76 @@
+.customers-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #003366;
+}
+
+.country-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.country-selector button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid #003366;
+  background-color: white;
+  color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.country-selector button.active,
+.country-selector button:hover {
+  background-color: #003366;
+  color: white;
+}
+
+/* ✅ Main client grid */
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row on large screens */
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.client-card {
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+}
+
+.client-card img {
+  max-width: 180px;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* ✅ Medium screens → 3 logos per row */
+@media (max-width: 1024px) {
+  .client-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ✅ Tablets → 2 logos per row */
+@media (max-width: 768px) {
+  .client-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ Mobile → 1 logo per row */
+@media (max-width: 480px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
