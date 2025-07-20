@@ -7,7 +7,7 @@ const products = [
     img: "/images/products/therm_audit.png"
   },
   {
-    title: "Energy Saving System Design",
+    title: "Energy Saving System Design and Supply",
     text: "Energy-saving system design related to heating and cooling.",
     img: "/images/products/energy_design.png"
   },

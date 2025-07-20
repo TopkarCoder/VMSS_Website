@@ -3,7 +3,7 @@ import './Customers.css';
 
 const clientData = {
   India: [
-    { name: 'SI Group - India Pvt. Ltd.', logo: '/public/logos/SI group.png' },
+    { name: 'SI Group - India Pvt. Ltd.', logo: '/logos/SI group.png' },
     { name:'Bharat Rasayan Ltd.', logo: '/logos/BR.png' },
     { name: 'DIC Fine Chemicals Pvt. Ltd.', logo: '/logos/DIC.png' },
     { name: 'RSSB', logo: '/logos/RSSB.png' },
