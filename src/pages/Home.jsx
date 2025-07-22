@@ -6,6 +6,7 @@ const images = [
   '/images/attachments/indorama r2.JPG',
   '/images/attachments/indorama r4.JPG',
   '/images/attachments/indorama r8.JPG',
+  '/images/attachments/indo ven r5.JPG',
   '/images/attachments/rock r1.JPG',
   '/images/attachments/rock r4.JPG',
   '/images/attachments/rock r6.JPG',

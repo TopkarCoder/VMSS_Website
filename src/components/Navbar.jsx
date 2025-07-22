@@ -40,11 +40,11 @@ export default function Navbar() {
               className="dropdown-toggle" 
               onClick={() => mobileMenuOpen && setShowDropdown(!showDropdown)}
             >
-              Company
+              About Us
             </span>
             {(showDropdown || (!mobileMenuOpen && showDropdown)) && (
               <ul className="dropdown-menu">
-                <li><Link to="/company" onClick={() => setMobileMenuOpen(false)}>Company at a Glance</Link></li>
+                <li><Link to="/company" onClick={() => setMobileMenuOpen(false)}>Company</Link></li>
                 <li><Link to="/mission" onClick={() => setMobileMenuOpen(false)}>Mission & Vision</Link></li>
               </ul>
             )}

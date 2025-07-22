@@ -14,7 +14,7 @@ export default function Company() {
           <p>
             VMSS is a trusted name in industrial thermal engineering consultancy, known for innovative, reliable,
             and technically sound solutions in heating, energy-saving systems, and process automation. Established
-            in 2017, we have served global clients across the UK, Europe, Middle East, and South-East Asia.
+            in 2015, we have served global clients across the UK, Europe, Middle East, and South-East Asia.
           </p>
         </section>        
 
@@ -28,7 +28,7 @@ export default function Company() {
                 <b>Mr. Vivek Sathaye</b>, a B.Tech graduate from IIT Kharagpur (1984) and IIM Ahmedabad-trained project manager, brings over 30 years of experience from Thermax Ltd., including international roles in the UK and Thailand. He has led large-scale thermal projects, energy audits, CE certifications, and combustion system innovations globally.
 
                 <p>
-                Mr. Vivek Sathaye, the Founder and Director of VMSS Thermal Engineering Consultants Pvt. Ltd., holds a B.Tech degree from IIT Kharagpur. He has also completed a crash course in Project Management from IIM Ahmedabad. Mr. Sathaye worked with Thermax Ltd. until 2014, followed by a year as a partner at Pride Projects.
+                Mr. Vivek Sathaye, the Founder and Director of VMSS Thermal Engineering Consultants Pvt. Ltd., holds a B.Tech degree from IIT Kharagpur. He has also completed a crash course in Project Management from IIM Ahmedabad. Mr. Sathaye worked with Thermax Ltd. until 2014.
                 </p>
                 <p>
                 His extensive career at Thermax spanned service, project execution, technical sales support, and design. He played a key role in managing high-temperature thermic fluid heaters and high pressure once through boilers for the polyester industry. Mr. Sathaye spent six years in Thailand, heading Thermax’s representative office, overseeing the complete range of Thermax products including process cooling, water treatment, pollution control, and heating equipment, while handling both sales and customer support.
@@ -69,9 +69,11 @@ export default function Company() {
             various thermic fluid additives, filters etc. and also provide complete service to clean
             thermic fluid piping system if it gets scaled! They have over 40 years’ experience in this
             field and have a large, satisfied customer base.</p>
+            <p><b>Mr. Sudhir Basargekar:</b> He is a chemical engineer from IIT – Mumbai and worked at Elantas and Thermax. Most of his work has been in waste incineration. Highly experienced and well renowned person in the field of incineration.</p>
           </div>
           <img className="centered-image" src='/images/products/associate.jpeg' alt='associates'></img>
         </section>
+        <p style={{textAlign: "center", fontSize: "large"}}>Cleaning initiative organised and undertaken by us at a global heritage site near Pune.</p>
 
 
         {/* Projects */}
@@ -81,7 +83,7 @@ export default function Company() {
           <p className="projects-intro">
             Our consultancy has served clients such as 
             <strong> HUL, L&amp;T, Century Enka, Asian Paints, BRB International (Malaysia), 
-            Sappi/Rockwell Solutions (Scotland), DIC Fine Chemicals, Supreme Petro, Indorama, and Thermax.</strong> 
+            Sappi/Rockwell Solutions (Scotland), DIC Fine Chemicals, Supreme Petro, Indorama, and Thermax. </strong> 
             We have executed large, complex, and prestigious thermal engineering projects across the globe.
           </p>
 

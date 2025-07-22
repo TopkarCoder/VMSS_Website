@@ -7,7 +7,7 @@
   position: relative;
   width: 85%;
   max-width: 1800px;
-  height: 775px; /* ✅ smaller, consistent height */
+  height: 750px; /* ✅ smaller, consistent height */
   margin: 20px auto;
   overflow: hidden;
   background: #E0E0E0;

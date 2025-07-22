@@ -3,7 +3,7 @@ import './ProductsAndServices.css';
 const products = [
   {
     title: "Audits & Troubleshooting",
-    text: "Audits of thermic fluid, steam, and hot water systems as well as troubleshooting.",
+    text: "Audits of thermic fluid, steam, and hot water systems for HAZOP, energy conservation as well as troubleshooting.",
     img: "/images/products/therm_audit.png"
   },
   {

@@ -37,7 +37,6 @@ const clientData = {
     { name: 'PT EuroAsiatic Jaya', logo: '/logos/EA.png'},
   ],
   Thailand: [
-    { name: 'PT EuroAsiatic Jaya', logo: '/logos/EA.png'},
     { name: 'Indorama Ventures', logo: '/logos/IV.png'},
     { name: 'SRF', logo: '/logos/SRF.png'},
   ], 
