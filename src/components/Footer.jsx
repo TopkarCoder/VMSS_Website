@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Contact Us</h4>
           <p>Email: sathayev@hotmail.com</p>
-          <p>Phone: +91 98765 43210</p>
+          <p>Phone: +91 98230 50490</p>
           <p>Pune, Maharashtra, India</p>
           <div className="footer-social">
             <a href="#"><i className="fab fa-linkedin"></i></a>
@@ -41,7 +41,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} VMSS Thermal Engineering Consultants. All rights reserved.
+        © {new Date().getFullYear()} VMSS Thermal Engineering Consultants Pvt Ltd. All rights reserved.
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ export default function Company() {
     <div className='page'>
       <div className="about-page">
         <div className="about-logo">
-          <img src="/public/images/vmss-logo.png" alt="VMSS Logo" />
+          <img src="/images/vmss-logo.png" alt="VMSS Logo" />
         </div>
 
         {/* Company Overview */}
