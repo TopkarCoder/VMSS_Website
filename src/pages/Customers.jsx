@@ -24,13 +24,14 @@ const clientData = {
     { name: 'Raj Rayon Industries Ltd.', logo: '/logos/RRIL.png' },
     { name: 'Graphite India Ltd.', logo: '/logos/GIL.png' },
     { name: 'Linde', logo: '/logos/Linde.png' },
-    { name: 'Finornic Chemicals India Pvt Ltd.', logo: '/logos/Finornic.png' }
-
+    { name: 'Finornic Chemicals India Pvt Ltd.', logo: '/logos/Finornic.png' },
+    { name: 'Alok Industries Ltd.', logo: '/logos/Alok.png' }
   ],
   Malaysia: [
     { name: 'BRB International', logo: '/logos/BRB.png' },
     { name: 'Indorama Ventures', logo: '/logos/IV.png'},
     { name: 'EVYAP', logo: '/logos/EVYAP.png' },
+    { name: 'Recron Malaysia Sdn Bhd', logo: '/logos/Recron.png' },
   ],
   Indonesia: [
     { name: 'Asia Pacific Fibers', logo: '/logos/APF.png' },
@@ -39,6 +40,7 @@ const clientData = {
   Thailand: [
     { name: 'Indorama Ventures', logo: '/logos/IV.png'},
     { name: 'SRF', logo: '/logos/SRF.png'},
+    { name: 'Calor', logo: '/logos/Calor.png' },
   ], 
   UK: [
     { name: 'Sappi', logo: '/logos/SA.png' },
