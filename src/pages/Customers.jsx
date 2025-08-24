@@ -25,7 +25,8 @@ const clientData = {
     { name: 'Graphite India Ltd.', logo: '/logos/GIL.png' },
     { name: 'Linde', logo: '/logos/Linde.png' },
     { name: 'Finornic Chemicals India Pvt Ltd.', logo: '/logos/Finornic.png' },
-    { name: 'Alok Industries Ltd.', logo: '/logos/Alok.png' }
+    { name: 'Alok Industries Ltd.', logo: '/logos/Alok.png' },
+    { name: 'IPG', logo: '/logos/IPG.png' },
   ],
   Malaysia: [
     { name: 'BRB International', logo: '/logos/BRB.png' },
