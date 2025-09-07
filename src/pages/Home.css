@@ -159,3 +159,21 @@
   width: 100%;
 }
 
+.slideshow-toggle {
+  text-align: center;
+}
+
+.slideshow-toggle button {
+  background: #003366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slideshow-toggle button:hover {
+  background: #005fa3;
+}

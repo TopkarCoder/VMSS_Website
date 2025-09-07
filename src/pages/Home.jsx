@@ -57,8 +57,9 @@ const whyPoints = [
 ];
 
 export default function Home() {
-    const [currentIndex, setCurrentIndex] = useState(1); // start at real 1
+  const [currentIndex, setCurrentIndex] = useState(1); // start at real 1
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true); // ✅ slideshow toggle
   const autoSlideRef = useRef(null);
 
   // ✅ Clone last → start, first → end
@@ -69,59 +70,71 @@ export default function Home() {
   ];
 
   const nextSlide = () => {
+    if (!isPlaying) return; // ✅ do nothing if stopped
     setCurrentIndex((prev) => prev + 1);
   };
 
   const prevSlide = () => {
+    if (!isPlaying) return; // ✅ do nothing if stopped
     setCurrentIndex((prev) => prev - 1);
   };
 
-  // ✅ Auto slide
+  // ✅ Auto slide (only when playing)
   useEffect(() => {
-    autoSlideRef.current = setInterval(nextSlide, 8000);
+    if (isPlaying) {
+      autoSlideRef.current = setInterval(() => {
+        setCurrentIndex((prev) => prev + 1);
+      }, 8000);
+    }
     return () => clearInterval(autoSlideRef.current);
-  }, []);
+  }, [isPlaying]);
 
-  // ✅ Seamless transition fix
+  // ✅ Seamless looping
   useEffect(() => {
+    if (!isPlaying) return; // ✅ skip jump logic when paused
+
     if (currentIndex === extendedImages.length - 1) {
-      // reached fake first → jump to real first
       setTimeout(() => {
         setIsTransitioning(false);
         setCurrentIndex(1);
-        setTimeout(() => setIsTransitioning(true), 50); // restore animation
+        setTimeout(() => setIsTransitioning(true), 50);
       }, 500);
     }
     if (currentIndex === 0) {
-      // reached fake last → jump to real last
       setTimeout(() => {
         setIsTransitioning(false);
         setCurrentIndex(images.length);
         setTimeout(() => setIsTransitioning(true), 50);
       }, 500);
     }
-  }, [currentIndex]);
+  }, [currentIndex, isPlaying]);
 
   return (
     <>
-    <div className="carousel">
-      <button onClick={prevSlide} className="carousel-btn left">❮</button>
+      <div className="carousel">
+        <button onClick={prevSlide} className="carousel-btn left">❮</button>
 
-      <div
-        className="carousel-track"
-        style={{
-          transform: `translateX(-${currentIndex * 100}%)`,
-          transition: isTransitioning ? "transform 0.6s ease" : "none",
-        }}
-      >
-        {extendedImages.map((src, idx) => (
-          <img key={idx} src={src} className="carousel-slide" />
-        ))}
+        <div
+          className="carousel-track"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+            transition: isTransitioning ? "transform 0.6s ease" : "none",
+          }}
+        >
+          {extendedImages.map((src, idx) => (
+            <img key={idx} src={src} className="carousel-slide" />
+          ))}
+        </div>
+
+        <button onClick={nextSlide} className="carousel-btn right">❯</button>
       </div>
 
-      <button onClick={nextSlide} className="carousel-btn right">❯</button>
-    </div>
-
+      {/* ✅ Play/Pause Button */}
+      <div className="slideshow-toggle">
+        <button onClick={() => setIsPlaying(!isPlaying)}>
+          {isPlaying ? "⏸ Stop Slideshow" : "▶ Start Slideshow"}
+        </button>
+      </div>
 
       {/* ✅ Home Sections */}
       <section className="why-section">
@@ -130,7 +143,9 @@ export default function Home() {
           {whyPoints.map((point, index) => (
             <div className="why-card" key={index}>
               <div className="why-icon">{point.icon}</div>
-              <p style={{fontSize: "20px"}}><b>{point.text}</b></p>
+              <p style={{ fontSize: "20px" }}>
+                <b>{point.text}</b>
+              </p>
             </div>
           ))}
         </div>
@@ -138,5 +153,3 @@ export default function Home() {
     </>
   );
 }
-
-
